@@ -4,16 +4,20 @@ from time import sleep
 
 sleep(2)
 
-# posição fixa do cursor (exemplo)
-x = 500
-y = 300
+delay = 0.2  # tempo inicial
 
 while True:
+    x, y = pyautogui.position()
     color = pyautogui.pixel(x, y)
     print(color)
 
-    if color == (0, 0, 0):  # obstáculo detectado
+    if color == (0, 0, 0):
         print("Pula")
         keyboard.press('c')
         sleep(0.05)
         keyboard.release('c')
+        sleep(delay)
+
+        # diminui o delay gradualmente
+        if delay > 0.05:
+            delay -= 0.005
