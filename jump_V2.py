@@ -3,8 +3,7 @@ import pyautogui
 from time import sleep
 
 sleep(2)
-
-delay = 0.2  # tempo inicial
+delay = 0.2
 
 while True:
     x, y = pyautogui.position()
@@ -18,6 +17,5 @@ while True:
         keyboard.release('c')
         sleep(delay)
 
-        # diminui o delay gradualmente
         if delay > 0.05:
             delay -= 0.005
