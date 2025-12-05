@@ -12,9 +12,9 @@ while True:
 
     if color == (0, 0, 0):
         print("Pula")
-        keyboard.press('c')
+        keyboard.press('x')
         sleep(0.05)
-        keyboard.release('c')
+        keyboard.release('x')
         sleep(delay)
 
         if delay > 0.05:
