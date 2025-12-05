@@ -42,14 +42,14 @@ def focus_emulator():
 
 def get_speed_settings(score):
     """Retorna configurações baseadas no score"""
-    if score >= 400:
-        return SPEED_ADJUSTMENTS[400]
-    elif score >= 300:
-        return SPEED_ADJUSTMENTS[300]
-    elif score >= 200:
-        return SPEED_ADJUSTMENTS[200]
-    elif score >= 100:
-        return SPEED_ADJUSTMENTS[100]
+    if score >= 40:
+        return SPEED_ADJUSTMENTS[40]
+    elif score >= 30:
+        return SPEED_ADJUSTMENTS[30]
+    elif score >= 20:
+        return SPEED_ADJUSTMENTS[20]
+    elif score >= 10:
+        return SPEED_ADJUSTMENTS[10]
     else:
         return SPEED_ADJUSTMENTS[0]
 

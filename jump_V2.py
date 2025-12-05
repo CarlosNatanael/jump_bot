@@ -8,7 +8,7 @@ delay = 0.2
 while True:
     x, y = pyautogui.position()
     color = pyautogui.pixel(x, y)
-    print(color)
+    # print(color)
 
     if color == (0, 0, 0):
         print("Pula")
